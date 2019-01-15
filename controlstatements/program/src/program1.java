@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 public class program1
 {
     public static void main(String[] args) 
@@ -15,7 +15,7 @@ public class program1
         c = sinput.nextInt();
         System.out.println("Given quadratic equation:"+a+"x^2 + "+b+"x + "+c);
         d = b * b - 4 * a * c;
-        if(f> 0)
+        if(d> 0)
         {
             System.out.println("Roots are real and unequal");
             root1 = ( - b + Math.sqrt(d))/(2*a);
@@ -23,7 +23,7 @@ public class program1
             System.out.println("First root is:"+root1);
             System.out.println("Second root is:"+root2);
         }
-        else if(f == 0)
+        else if(d == 0)
         {
             System.out.println("Roots are real and equal");
             root1 = (-b+Math.sqrt(d))/(2*a);
